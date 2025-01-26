@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="w-11/12 max-w-5xl mx-auto h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-2 md:gap-16 text-center md:text-left">
+        <div className="w-11/12 max-w-5xl mx-auto h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-2 md:gap-16  text-center md:text-left md:pt-10">
 
             <div className="flex flex-col items-center md:items-start gap-4 ">
                 <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
@@ -48,13 +48,14 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="flex-shrink-0 md:order-last mt-8 md:mt-0">
+            <div className="flex-shrink-0 md:order-last mt-8 sm:mt-9 md:mt-15">
                 <Image
                     src={assets.Myprofile2}
                     alt="Profile Picture"
-                    className="rounded-full w-32 sm:w-48 md:w-56 lg:w-70"
+                    className="hidden md:block rounded-full w-32 sm:w-48 md:w-56 lg:w-70"
                 />
             </div>
+
         </div>
     );
 };
