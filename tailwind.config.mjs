@@ -8,9 +8,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary:'#fcf4ff',
+        darkprimary:'#2a004a',
+        darkTheme:'#11001F',
+        'gradient-start': '#ff7e5f',
+        'gradient-middle': '#feb47b',
+        'gradient-end': '#fcb69f',
+
       },
+      fontFamily:{
+        Outfit:["Outfit","sans-serif"],
+        Ovo:["Ovo","serif"]
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, var(--gradient-start), var(--gradient-middle), var(--gradient-end))',
+      }
     },
   },
   plugins: [],
